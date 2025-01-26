@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+//verified
 const FileSchema = new mongoose.Schema({
     path: {
         type: String,
