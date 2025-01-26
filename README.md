@@ -1,59 +1,74 @@
-#File Sharing Application-MERN
-A full-stack web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack that allows users to securely upload and share files. This application enables efficient and secure file-sharing through a generated download link.
+# MERN File Sharing Application
 
-Features
-File Upload: Users can upload files to the server with size validation.
-File Sharing: Generate shareable links for each uploaded file.
-Secure Downloads: Download files securely using the shareable links.
-Responsive Design: Optimized for both desktop and mobile use.
-Technology Stack:
-Frontend: React.js
-Backend: Node.js with Express.js
-Database: MongoDB
-File Storage: Managed by local uploads or cloud integration (e.g., AWS S3).
-Installation and Setup
+This is a secure file-sharing application built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to upload files and generate shareable links for efficient and secure file sharing.
 
-Prerequisites
-Ensure you have the following installed:
-Node.js
-MongoDB
-Git
-Steps to Run Locally
+---
 
-Clone the repository:
+## Features
+
+- **File Upload**: Upload files securely through an intuitive user interface.
+- **Download Tracking**: Track the number of times files are downloaded.
+- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
+
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)
+
+---
+
+## Installation and Setup
+
+### Clone the Repository
+
+```bash
 git clone https://github.com/Anushkaa32/MERN-FILE-SHARING-APP.git
 cd MERN-FILE-SHARING-APP
-Install dependencies:
-
-# Install server dependencies
+```
+### Install Server Dependencies
+```bash
 cd server
 npm install
-
-# Install client dependencies
+```
+### Install Client Dependencies
+```bash
 cd ../client
 npm install
-Configure environment variables:
+```
 
+### Configure Environment Variables
 Create a .env file in the server directory and add the following:
+```bash
 MONGO_URI=your-mongodb-connection-string
 PORT=5000
 BASE_URL=http://localhost:5000
+```
 Replace your-mongodb-connection-string with your MongoDB URI.
 
-Start the application:
+---
 
-# Start backend
+## Running the Application
+
+### Start the Backend
+```bash
 cd server
 npm start
+```
 
-# Start frontend
+### Start the Frontend
+```bash
 cd ../client
 npm start
+```
+Open the application in your browser at http://localhost:3000.
 
-Open the app in your browser:
-http://localhost:3000
-Folder Structure
+---
 
+## Folder Structure
 MERN-FILE-SHARING-APP
 ├── client                 # React.js frontend
 │   ├── public             # Static files
@@ -65,33 +80,21 @@ MERN-FILE-SHARING-APP
 │   ├── uploads            # Uploaded files directory
 │   └── utils              # Utility functions
 
+---
 
-Features and Functionalities
-File Upload:
+## Future Enhancements
+- **Authentication**: Add user login and registration.
+- **Cloud Storage**: Integrate cloud services like AWS S3 for file storage.
+- **Link Expiry**: Add expiry functionality for shareable links.
 
-Upload files through a simple and intuitive UI.
-Supports multiple file types and sizes.
-Shareable Links:
+---
 
-Generate a secure link for each uploaded file.
-Users can share this link for downloading the file.
-Download Tracking:
+## Contributing
+Contributions are welcome! Feel free to fork the repository, create a branch, and submit a pull request.
 
-Tracks the number of times a file is downloaded.
-Backend Services:
+---
 
-Built-in file validation.
-Error handling and secure storage.
-Frontend Experience:
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-User-friendly React interface.
-Responsive design for different devices.
-Future Enhancements
-User Authentication: Add secure login and registration.
-Cloud Integration: Use cloud storage for file uploads.
-Expiry Links: Add expiry functionality for shareable links.
-Contributing
-Contributions are welcome! Feel free to submit a pull request or open an issue for discussion.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
