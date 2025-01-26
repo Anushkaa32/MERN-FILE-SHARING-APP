@@ -70,15 +70,15 @@ Open the application in your browser at http://localhost:3000.
 
 ## Folder Structure
 MERN-FILE-SHARING-APP
-├── client                 # React.js frontend
-│   ├── public             # Static files
-│   └── src                # React components, CSS, services
-├── server                 # Node.js backend
-│   ├── controllers        # API business logic
-│   ├── models             # MongoDB schemas
-│   ├── routes             # API routes
-│   ├── uploads            # Uploaded files directory
-│   └── utils              # Utility functions
+├── client                 # React.js frontend <br/>
+│   ├── public             # Static files <br/>
+│   └── src                # React components, CSS, services <br/>
+├── server                 # Node.js backend <br/>
+│   ├── controllers        # API business logic <br/>
+│   ├── models             # MongoDB schemas <br/>
+│   ├── routes             # API routes <br/>
+│   ├── uploads            # Uploaded files directory <br/>
+│   └── utils              # Utility functions <br/>
 
 ---
 
